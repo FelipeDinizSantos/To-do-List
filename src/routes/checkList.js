@@ -23,11 +23,11 @@ router.get('/', async (req, res) =>
         try
         {
             let checkList = await Checklist.find({});
-            res.status(200).json(checkList);
+            res.status(200).render('checklists/index', {checklists: checkList});
         }
         catch(error)
         {
-            res.status(422).json(error);
+            res.status(404).render('pages/error', {error: 'Erro ao exibir as listas!'});
         }
     })
 
@@ -36,11 +36,11 @@ router.get('/:id', async (req, res)=>
         try
         {
             let checkList = await Checklist.findById(req.params.id);
-            res.status(200).json(checkList);
+            res.status(200).render('checklists/show', {checklist: checkList});
         }
         catch(error)
         {
-            res.status(422).json(error);
+            res.status(404).render('pages/error', {error: 'Erro ao exibir as listas de tarefas!'});
         }
     })
 
