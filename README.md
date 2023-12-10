@@ -7,5 +7,5 @@ O projeto consiste em uma aplicação simples de lista de afazeres, permitindo q
 * Express: Framework web para Node.js, facilitando a construção de APIs.
 * EJS (Embedded JavaScript): Biblioteca para geração dinâmica de HTML utilizando JavaScript.
 * MVC (Model-View-Controller): Padrão arquitetural que separa a lógica de negócios, a apresentação e a manipulação de dados.
-* 
+
 Espero que este projeto seja útil para seus estudos e contribua para o seu aprendizado em Node.js, EJS e arquitetura MVC. Se tiver dúvidas ou sugestões, não hesite em entrar em contato.
